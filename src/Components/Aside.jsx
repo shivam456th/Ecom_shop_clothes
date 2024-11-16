@@ -4,6 +4,7 @@ import { MdDeleteForever } from "react-icons/md";
 import Header from './Header';
 import { Context } from './Store';
 import Category from './Category';
+import AddtoCart from './AddtoCart';
 
 
 const Aside = () => {
@@ -98,7 +99,8 @@ const Aside = () => {
             </div>
             {/* //////////////// Mobile Section ///////////////// */}
             <div className='md:hidden flex'>
-                <Category />
+            <Category />
+            <AddtoCart/>
             </div>
         </>
     )

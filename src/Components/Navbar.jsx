@@ -52,9 +52,15 @@ const Navbar = () => {
                         <img src="https://dynamic.brandcrowd.com/asset/logo/ce7e9c9d-a5b6-4077-a0e3-84ba67de8984/logo-search-grid-2x?logoTemplateVersion=1&v=638554109038100000" alt="Lapak Baju Logo" className="w-8 h-8 object-contain" />
                         <p className="text-base font-semibold">Lapak <span className="text-blue-600">Baju</span></p>
                     </div>
+                   <div className='flex gap-4'>
+                   <button className='flex items-center space-x-1 py-1.5 px-2 text-lg text-blue-600 bg-blue-100 rounded-lg hover:bg-blue-200 transition duration-300 relative' onClick={Open}>
+                        <IoBagHandleOutline />
+                        <span className='text-white text-sm top-[-1px] left-5 absolute bg-red-300 py-1 px-2 rounded-full '>{cart.length}</span>
+                        </button>
                     <div className='rounded-full overflow-hidden border-2 border-blue-500'>
                         <img src={AppleFace} alt="User Avatar" className="w-8 h-8 object-cover" />
                     </div>
+                   </div>
                 </div>
 
                 <div className='flex flex-col space-y-2'>
@@ -73,15 +79,7 @@ const Navbar = () => {
                         />
                     </div>
 
-                    <div className='flex justify-between'>
-                        <button className='flex items-center space-x-1 py-1.5 px-2 text-xs text-blue-600 bg-blue-100 rounded-lg hover:bg-blue-200 transition duration-300'>
-                            <p>ENG</p>
-                            <GoGlobe className="text-sm" />
-                        </button>
-                        <button className='flex items-center space-x-1 py-1.5 px-2 text-lg text-blue-600 bg-blue-100 rounded-lg hover:bg-blue-200 transition duration-300'>
-                        <IoBagHandleOutline />
-                        </button>
-                    </div>
+                    
                 </div>
             </div>
         </>

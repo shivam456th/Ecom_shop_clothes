@@ -16,7 +16,7 @@ const Sweater = () => {
   return (
     <>
       <div className='p-2 md:p-4'>
-        <div className='flex flex-col md:flex-row justify-between w-full'>
+        {/* <div className='flex flex-col md:flex-row justify-between w-full'>
           <h1 className='text-3xl md:text-4xl font-semibold text-gray-600 mb-4 md:mb-0'>Sweater</h1>
         </div>
         <div className='flex flex-wrap gap-2 mt-4'>
@@ -32,12 +32,12 @@ const Sweater = () => {
             <p>XXL</p>
             <div><MdOutlineClose className='cursor-pointer' /></div>
           </div>
-        </div>
+        </div> */}
 
 
 
         {/* //////////////// Mobile Section ///////////////// */}
-        <div className=' md:hidden grid  grid-cols-1  gap-4 mt-2'>
+        <div className=' md:hidden grid  grid-cols-2  gap-4 mt-2 mb-36'>
 
           {product.filter(product => product.category === "sweaters").map((product, index) => (
             <div key={index} className='bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden'>

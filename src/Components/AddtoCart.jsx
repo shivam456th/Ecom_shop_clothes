@@ -13,7 +13,7 @@ const AddtoCart = () => {
 
     return (
         <>
-            <div className={` ${open ? "w-[30%]" : "w-[0%]"} md:block hidden z-20 transition-all top-20 right-0  h-screen bg-white shadow-lg fixed overflow-y-scroll scrollbar-hide`}>
+            <div className={` ${open ? "w-[50%]" : "w-[0%]"} md:block hidden z-20 transition-all top-20 right-0  h-screen bg-white shadow-lg fixed overflow-y-scroll scrollbar-hide`}>
                 <div className='p-4 border-b'>
                     <div className='flex justify-between items-center'>
                         <p className='text-xl font-semibold'>Shopping Cart <span className='text-blue-600 text-sm'>({cart.length})</span></p>
@@ -83,7 +83,7 @@ const AddtoCart = () => {
                 </div>
             </div>
 
-            <div className={` ${open ? "w-[30%]" : "w-[0%]"}  md:hidden block z-20 transition-all top-60 right-0  h-screen bg-white shadow-lg fixed overflow-y-scroll scrollbar-hide`}>
+            <div className={`${open ? "w-[70%]" : "w-[0%]"} md:hidden block z-20 transition-all top-60 right-0  h-screen bg-white shadow-lg fixed overflow-y-scroll scrollbar-hide`}>
                 <div className='p-4 border-b'>
                     <div className='flex justify-between items-center'>
                         <p className='text-xl font-semibold'>Shopping Cart <span className='text-blue-600 text-sm'>({cart.length})</span></p>
